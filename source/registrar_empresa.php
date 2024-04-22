@@ -43,19 +43,10 @@
         <input type="email" class="form-control" name="correo" required>
       </div>
     </div>
-
     
 
     <button type="submit" class="btn btn-primary">Registrar Empresa</button>
     </form>
-
-    <!-- Fin  de la zona central del sistema -->
-</div>
-<!-- /.container-fluid --> 
-
-<?php
-    include("../includes/foot.php");
-?>
 
     <!-- Fin  de la zona central del sistema -->
 </div>

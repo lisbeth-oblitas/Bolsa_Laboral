@@ -24,8 +24,7 @@
     ?>
 
   <form method="POST" action="actualizar_usuario.php"  >
-    
-    <input type="text" class="form-control" name="txt_id_usuario" value="<?php echo $fila['id'] ?>">    
+       
 
       <div class="row mb-3">
         <label for="inputEmail3" class="col-sm-2 col-form-label">DNI</label>

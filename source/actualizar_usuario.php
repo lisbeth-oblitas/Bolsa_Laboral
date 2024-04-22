@@ -1,5 +1,5 @@
 <?php
-    include("../includes/head.php");
+    
     include("../includes/conectar.php");
     $conexion = conectar();
 
@@ -23,8 +23,5 @@
 
     mysqli_query($conexion,$sql);
 
-    header("Location:listar_usuarios.php")
-
-
-
+    header("Location:listar_usuarios.php");
 ?>

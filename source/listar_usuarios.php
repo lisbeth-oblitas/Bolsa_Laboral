@@ -31,7 +31,7 @@
                 echo "<td>";
                     ?>
                     <button type="button" class="btn btn-primary" onClick="f_editar('<?php echo $fila['id']; ?>');">Editar</button>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
+                    <button type="button" class="btn btn-danger" onClick="f_eliminar('<?php echo $fila['id']; ?>');">Eliminar</button>
                     <?php
                 echo "</td>";
 
@@ -49,19 +49,14 @@
 ?>
 
 <script>
-    /*
-    $(document).ready(function(){
-        $("#divdialog").dialog({
-            width:500,
-            height:400,
-            title:"Asignar usuario..",
-        });
-        $( "#divdialog" ).dialog( "open" );
-    });
-    */
     function f_editar(pid){
         //redireccionamos hacia el archivo 'modificar_usuario.php'
         location.href="modificar_usuario.php?pid="+pid;
     }
 
-</script>    
+    function f_eliminar(id) {
+        if (confirm('¿Está seguro de eliminar este usuario?')) {
+            location.href = "eliminar_usuario.php?id=" + id;
+        }
+    }
+</script>
