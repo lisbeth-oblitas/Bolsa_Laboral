@@ -84,10 +84,10 @@ $conexion=conectar();
             // Verificar si el usuario está asignado a una empresa
             if ($fila_user['id_empresa'] !== NULL) {
                 // Si el usuario está asignado, mostrar un mensaje en rojo
-                $html_lista_usuarios .= '<span class="badge badge-danger ">Ya asignado</span>';
+                $html_lista_usuarios .= '<span class="badge badge-danger ">Asignado</span>';
             } else {
                 // Si el usuario no está asignado, mostrar un enlace o botón para asignarlo
-                $html_lista_usuarios .= ' <a href="#" onclick="asignarUsuario('.$fila_user['id'].')" class="btn btn-primary">Asignar</a>';
+                $html_lista_usuarios .= ' <a href="#" onclick="asignarUsuario('.$fila_user['id'].')" class="btn btn-btn-warnig">Asignar</a>';
             }
             $html_lista_usuarios .= '</a>';
         }
